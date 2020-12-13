@@ -4,6 +4,7 @@ pipeline {
         stage("build-and-deploy-dev") {
             when {
                 branch "trigger"
+				
             }
             steps {
                 powershell "mvn clean test"
